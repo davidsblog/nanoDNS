@@ -1,0 +1,5 @@
+nanodns.xcodeproj/
+
+# osx noise
+.DS_Store
+profile
