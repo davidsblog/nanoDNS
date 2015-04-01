@@ -1,0 +1,16 @@
+#!/bin/sh /etc/rc.common
+#
+# example init script
+# the most basic init script to start the nanoDNS server
+# put it in /etc/init.d/
+
+START=10
+STOP=15
+ 
+start() {        
+        /root/nanoDNS/nanodns 192.168.61.1 &
+}                 
+ 
+stop() {          
+       killall nanodns 
+}
